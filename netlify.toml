@@ -2,3 +2,6 @@
   command = "eleventy"
   publish = "_site"
 
+[[redirects]]
+  from = "/info"
+  to = "/about"
