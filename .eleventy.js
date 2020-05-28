@@ -1,10 +1,12 @@
 module.exports = function(eleventyConfig) {
 
-   // grabbing env vars
-   const {
+
+  // grabbing env vars
+  const {
     CONTEXT
   } = process.env;
 
+  console.log('CONTEXT :>> ', CONTEXT);
 
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
