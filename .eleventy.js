@@ -2,7 +2,6 @@ module.exports = function(eleventyConfig) {
 
    // grabbing env vars
    const {
-    DATA_CONTEXT,
     CONTEXT
   } = process.env;
 
@@ -14,7 +13,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      data: `../data/${DATA_CONTEXT}`
+      data: CONTEXT == "production" ? "../data/prod" : "../data/stage"
     }
   };
 
