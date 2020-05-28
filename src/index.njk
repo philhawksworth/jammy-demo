@@ -34,6 +34,23 @@
 
     {% endfor %}
 
+
+
+
+<form action="/thanks" method="post" name="customer-feedback" netlify>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" />
+
+  <label for="feedback">Feedback</label>
+  <textarea id="feedback" name="feedback"></textarea>
+
+  <input type="submit" id="submit" />
+</form>
+
+
+
+
+
     </section>
   </main>
   <div class="tint">
